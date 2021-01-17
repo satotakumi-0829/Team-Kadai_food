@@ -1,0 +1,447 @@
+@charset "utf-8";
+
+/* デフォルト文字設定 */
+body {
+	font-family: 'Sitka Small','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+/* 背景画像 */
+body {
+	background-image : url(../../images/img_bg.png);
+	background-repeat : repeat-y;
+	background-position: center top;
+}
+
+#header {
+	margin: 0 auto;
+	width: 780px;
+	height: 100px;
+}
+
+
+/*ナビゲーション*/
+.menu {
+	width: 780px;
+	display: table;
+	border-collapse: separate;
+	border: none;
+	border-spacing: 10px 0px;
+}
+
+.menu > li {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.menu li a:hover {
+	opacity: 0.6;
+	filter: brightness(110%);
+}
+
+#gnav .menu > li {
+	padding: 25px 0 30px 0;
+}
+
+#gnav .menu .logo {
+	padding: 6px 0 30px 0;
+}
+
+.first {
+	position: relative;
+}
+
+.second {
+	position: absolute;
+	width: 100px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1;
+	top: 50%;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.second li {
+	display: block;
+}
+
+.second ul {list-style-type: none;}		/* ドロップダウンの上下の間隔を無くす */
+.second li img {vertical-align: bottom;}	/* ドロップダウンの上下の間隔を無くす */
+
+.first:hover .second {
+	visibility: visible;
+	opacity: 1;
+}
+
+#gnav .first:hover .second {
+	top: 73px;	/* ドロップダウンの上下の間隔を調整 */
+}
+
+/* スライド */
+#slide-images{
+	width:780px;
+	height:448px;
+	margin: 0 auto;
+	background-image : url(../../images/img_slide_frame.png);
+}
+
+.slider {
+	width: 780px;
+	height: 380px;
+	padding-top: 34px;
+}
+
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+	color: #000;
+}
+
+.slider figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fade { max-width: 600px; margin: 0 auto 50px; padding: 0; height: auto;}
+.fade img { width: 100%;}
+
+/* スライダーの外にドットを設置*/
+.dots {
+	position: relative;
+	text-align: center;
+	padding-bottom: 7px;
+}
+
+/* ページの先頭へ戻るボタン */
+#to_TOP_btn {
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: auto;
+	right: 30px;
+	bottom: 30px;
+	background-image: url(../../images/img_btn_top.png);
+}
+#to_TOP_btn:hover {
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: auto;
+	right: 30px;
+	bottom: 30px;
+	background-image: url(../../images/img_btn_top.png);
+	transition: 0.1s;
+	opacity: 0.6;
+	filter: brightness(110%);
+	cursor : pointer;
+}
+
+/* フッター */
+#footer {
+	margin: 50px auto 0;
+	width: 780px;
+}
+
+#footer > p {
+	display: block;
+	width: 780px;
+	height: 150px;
+	margin-bottom: 0;
+}
+
+.icon {
+	margin: 0 auto;
+}
+
+.icon * {
+	float:left;
+	padding: 10px 5px;
+}
+
+.icon .facebook {
+	margin-left: 250px;
+}
+
+.icon *:hover  {
+	opacity: 0.6;
+	filter: brightness(110%);
+}
+
+.footer_bottom {
+	margin: 0 auto;
+	width: 780px;
+	background-color: #9b845f;
+	padding-bottom: 10px;
+}
+
+.footer_bottom p {
+	color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+#main {
+	margin: 0 auto;
+	width: 780px;
+}
+
+#main h1{
+	font-size:48px;
+	font-weight:bold;
+	font-family: 'Sitka Small','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: 40px;
+	font-weight: bold;
+
+}
+
+#main h2{
+	font-size:40px;
+ 	font-weight:bold;
+	font-family: 'Sitka Small','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+	padding-left:10px;
+}
+
+#main h3{
+	font-size:32px;
+	font-weight:bold;
+	font-family: 'Sitka Small','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+	margin-bottom:10px;
+	padding-left:10px;
+    line-height:35px;
+}
+
+#main p{
+	font-size:24px;
+	font-weight:Demibold;
+ 	font-family: 'Sitka Small','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+	margin-bottom: 1em;
+	font-size: 24px;
+	font-weight: 600;	/*Demibold*/
+	line-height:30px;
+}
+
+.information{
+	font-size:24px;
+	font-weight:Demibold;
+	font-family: 'Sitka Small','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+	margin-bottom: 1em;
+	font-size: 24px;
+	font-weight: 600;	/*Demibold*/
+	line-height:30px;
+	padding-left:50px;
+    padding-right:50px;
+	padding-bottom:20px;
+}
+
+.top{
+    padding-top:20px;
+    margin-top:30px;
+    text-align:center;
+}
+
+.background{
+	background:#faf9ee;
+	margin-bottom:100px;
+}
+
+#decoration{
+	padding:-50px auto;
+	text-align:center;
+}
+
+.p_top{
+	width:700px;
+	margin-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:20px;
+}
+
+#restaurant_typename{
+	overflow:hidden;
+	background-color:#faf9ee;
+	margin-bottom:100px;
+	position:relative;
+}
+
+.p_border{
+	border-top:1px #000 solid;
+	width:440px;
+	padding-top:10px;
+}
+
+#Ristorante{
+	position:relative;
+	top:30px;
+}
+
+#Ristorante_p{
+	float:left;
+	width:400px;
+	padding-left:10px;
+	margin-bottom:20px;
+}
+
+#Ristorante_img{
+	float:right;
+	position:relative;
+	top:80px;
+	padding-right:10px;
+}
+
+#Trattoria{
+	position:relative;
+	top:30px;
+}
+
+#Trattoria_p{
+	float:left;
+	width:400px;
+	padding-left:10px;
+	margin-bottom:20px;
+}
+
+#Trattoria_img{
+	float:right;
+	position:relative;
+	top:80px;
+	padding-right:10px;
+}
+
+#Osteria{
+	position:relative;
+	top:30px;
+}
+
+#Osteria_p{
+	float:left;
+	width:400px;
+	padding-left:10px;
+	margin-bottom:20px;
+}
+
+#Osteria_img{
+	float:right;
+	position:relative;
+	top:45px;
+	padding-right:10px;
+}
+
+#Pizzeria{
+	position:relative;
+	top:30px;
+}
+
+#Pizzeria_p{
+	float:left;
+	width:400px;
+	padding-left:10px;
+	margin-bottom:20px;
+}
+
+#Pizzeria_img{
+	float:right;
+	position:relative;
+	top:45px;
+	padding-right:10px;
+}
+
+.manner_h2{
+	margin-bottom:20px;
+	border-bottom:5px #000 solid;
+	width:690px;
+	position:relative;
+	left:40px;
+    line-height:50px;
+}
+
+.img_center{
+	text-align:center;
+}
+
+.food_type{
+	padding-top:20px;
+    padding-left:0px;
+	margin-bottom:10px;
+	border-bottom:2px #000 solid;
+	width:700px;
+	position:relative;
+	left:40px;
+}
+
+.food_type_p{
+	width:700px;
+	margin-top:30px;
+	padding-bottom:20px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.title{
+	margin-top:20px;
+	margin-bottom:10px;
+	padding-top:20px;
+    text-align:center;
+}
+
+.title_p{
+	width:700px;
+	margin-top:30px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+#final_p{
+	margin-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+#cboxOverlay {
+  background-color:rgba(0,0,0,0.75);
+  width: 100%;
+  height: 120%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#cboxLoadedContent {
+  /*background: #000;*/
+  padding: 1px;
+}
+#cboxLoadedContent {
+  padding: 0;
+  overflow: auto;
+  -moz-box-shadow: 0px 1px 10px #000000;
+  -webkit-box-shadow: 0px 1px 10px #000000;
+  box-shadow: 0px 1px 10px #000000;
+}
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose, #cboxTitle {
+  top: -30px;
+}
+#colorbox, #cboxOverlay, #cboxWrapper {
+  overflow: visible;
+}
+#cboxTitle {
+  color: #fff;
+}
+#inline-content { /* インラインを使用する時のみ */
+  margin: 20px;
+}
+#ajax-wrap { /* ajaxを使用する時のみ */
+  margin: 20px;
+}
